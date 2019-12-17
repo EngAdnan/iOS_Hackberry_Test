@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		12721DE223A862710080FD9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12721DE123A862710080FD9B /* Assets.xcassets */; };
 		12721DE523A862710080FD9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12721DE323A862710080FD9B /* LaunchScreen.storyboard */; };
 		12721DF023A862710080FD9B /* Hackberry_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12721DEF23A862710080FD9B /* Hackberry_TestTests.swift */; };
+		12FE866A23A867F300FC87C4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE866523A867F200FC87C4 /* Utils.swift */; };
+		12FE866B23A867F300FC87C4 /* RadioPrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE866623A867F200FC87C4 /* RadioPrograms.swift */; };
+		12FE866C23A867F300FC87C4 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE866723A867F300FC87C4 /* Connectivity.swift */; };
+		12FE866D23A867F300FC87C4 /* HackberryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE866823A867F300FC87C4 /* HackberryManager.swift */; };
+		12FE867123A9132400FC87C4 /* RadioProgramsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE866F23A9132400FC87C4 /* RadioProgramsController.swift */; };
+		12FE867223A9132400FC87C4 /* RadioProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FE867023A9132400FC87C4 /* RadioProgramCell.swift */; };
 		1B1B4835FA066E74767861F1 /* Pods_Hackberry_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F22405C0493FD6225632A /* Pods_Hackberry_TestTests.framework */; };
 		E5DAF814CC762C19A7A339AA /* Pods_Hackberry_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC71A2126CD5954CF6B8881 /* Pods_Hackberry_Test.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +46,12 @@
 		12721DEB23A862710080FD9B /* Hackberry_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hackberry_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12721DEF23A862710080FD9B /* Hackberry_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackberry_TestTests.swift; sourceTree = "<group>"; };
 		12721DF123A862710080FD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12FE866523A867F200FC87C4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		12FE866623A867F200FC87C4 /* RadioPrograms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPrograms.swift; sourceTree = "<group>"; };
+		12FE866723A867F300FC87C4 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		12FE866823A867F300FC87C4 /* HackberryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackberryManager.swift; sourceTree = "<group>"; };
+		12FE866F23A9132400FC87C4 /* RadioProgramsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioProgramsController.swift; sourceTree = "<group>"; };
+		12FE867023A9132400FC87C4 /* RadioProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioProgramCell.swift; sourceTree = "<group>"; };
 		2A8B4EE64B724C5D304742C7 /* Pods-Hackberry_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackberry_Test.release.xcconfig"; path = "Target Support Files/Pods-Hackberry_Test/Pods-Hackberry_Test.release.xcconfig"; sourceTree = "<group>"; };
 		553705F2149C65711C16835D /* Pods-Hackberry_TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackberry_TestTests.release.xcconfig"; path = "Target Support Files/Pods-Hackberry_TestTests/Pods-Hackberry_TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A51A155117C91D3ABDC9B6B /* Pods-Hackberry_TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackberry_TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Hackberry_TestTests/Pods-Hackberry_TestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,11 +103,12 @@
 		12721DD723A8626F0080FD9B /* Hackberry_Test */ = {
 			isa = PBXGroup;
 			children = (
+				12FE866423A866FD00FC87C4 /* Model */,
+				12FE866323A866E700FC87C4 /* View */,
+				12FE866223A866DB00FC87C4 /* Controller */,
+				12721DE123A862710080FD9B /* Assets.xcassets */,
 				12721DD823A8626F0080FD9B /* AppDelegate.swift */,
 				12721DDA23A8626F0080FD9B /* SceneDelegate.swift */,
-				12721DDC23A8626F0080FD9B /* ViewController.swift */,
-				12721DDE23A8626F0080FD9B /* Main.storyboard */,
-				12721DE123A862710080FD9B /* Assets.xcassets */,
 				12721DE323A862710080FD9B /* LaunchScreen.storyboard */,
 				12721DE623A862710080FD9B /* Info.plist */,
 			);
@@ -111,6 +124,35 @@
 			path = Hackberry_TestTests;
 			sourceTree = "<group>";
 		};
+		12FE866223A866DB00FC87C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12FE867023A9132400FC87C4 /* RadioProgramCell.swift */,
+				12FE866F23A9132400FC87C4 /* RadioProgramsController.swift */,
+				12721DDC23A8626F0080FD9B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		12FE866323A866E700FC87C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12721DDE23A8626F0080FD9B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12FE866423A866FD00FC87C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				12FE866723A867F300FC87C4 /* Connectivity.swift */,
+				12FE866623A867F200FC87C4 /* RadioPrograms.swift */,
+				12FE866823A867F300FC87C4 /* HackberryManager.swift */,
+				12FE866523A867F200FC87C4 /* Utils.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F5F5B7555AC80D86C4FE9D58 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +161,6 @@
 				7A51A155117C91D3ABDC9B6B /* Pods-Hackberry_TestTests.debug.xcconfig */,
 				553705F2149C65711C16835D /* Pods-Hackberry_TestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -302,7 +343,13 @@
 			files = (
 				12721DDD23A8626F0080FD9B /* ViewController.swift in Sources */,
 				12721DD923A8626F0080FD9B /* AppDelegate.swift in Sources */,
+				12FE866C23A867F300FC87C4 /* Connectivity.swift in Sources */,
 				12721DDB23A8626F0080FD9B /* SceneDelegate.swift in Sources */,
+				12FE866B23A867F300FC87C4 /* RadioPrograms.swift in Sources */,
+				12FE866A23A867F300FC87C4 /* Utils.swift in Sources */,
+				12FE867123A9132400FC87C4 /* RadioProgramsController.swift in Sources */,
+				12FE867223A9132400FC87C4 /* RadioProgramCell.swift in Sources */,
+				12FE866D23A867F300FC87C4 /* HackberryManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

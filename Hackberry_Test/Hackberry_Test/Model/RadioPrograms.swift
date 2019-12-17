@@ -26,7 +26,7 @@ struct RadioProgramDetails:Decodable {
     let email:String
     let phone:String
     let programUrl:String
-    let programSlug:String
+    let programSlug:String?
     let programImage:String
     let programImageTemplate:String
     let programImageWide:String
