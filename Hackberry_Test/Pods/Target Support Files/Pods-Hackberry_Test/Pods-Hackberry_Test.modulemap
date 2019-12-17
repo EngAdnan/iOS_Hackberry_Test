@@ -1,0 +1,6 @@
+framework module Pods_Hackberry_Test {
+  umbrella header "Pods-Hackberry_Test-umbrella.h"
+
+  export *
+  module * { export * }
+}

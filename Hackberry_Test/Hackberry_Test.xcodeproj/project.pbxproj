@@ -14,6 +14,8 @@
 		12721DE223A862710080FD9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12721DE123A862710080FD9B /* Assets.xcassets */; };
 		12721DE523A862710080FD9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12721DE323A862710080FD9B /* LaunchScreen.storyboard */; };
 		12721DF023A862710080FD9B /* Hackberry_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12721DEF23A862710080FD9B /* Hackberry_TestTests.swift */; };
+		1B1B4835FA066E74767861F1 /* Pods_Hackberry_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0F22405C0493FD6225632A /* Pods_Hackberry_TestTests.framework */; };
+		E5DAF814CC762C19A7A339AA /* Pods_Hackberry_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC71A2126CD5954CF6B8881 /* Pods_Hackberry_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,12 @@
 		12721DEB23A862710080FD9B /* Hackberry_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hackberry_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12721DEF23A862710080FD9B /* Hackberry_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackberry_TestTests.swift; sourceTree = "<group>"; };
 		12721DF123A862710080FD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8B4EE64B724C5D304742C7 /* Pods-Hackberry_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackberry_Test.release.xcconfig"; path = "Target Support Files/Pods-Hackberry_Test/Pods-Hackberry_Test.release.xcconfig"; sourceTree = "<group>"; };
+		553705F2149C65711C16835D /* Pods-Hackberry_TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackberry_TestTests.release.xcconfig"; path = "Target Support Files/Pods-Hackberry_TestTests/Pods-Hackberry_TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A51A155117C91D3ABDC9B6B /* Pods-Hackberry_TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackberry_TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Hackberry_TestTests/Pods-Hackberry_TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CC71A2126CD5954CF6B8881 /* Pods_Hackberry_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackberry_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		830106851CDB8545D8BDD432 /* Pods-Hackberry_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackberry_Test.debug.xcconfig"; path = "Target Support Files/Pods-Hackberry_Test/Pods-Hackberry_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0F22405C0493FD6225632A /* Pods_Hackberry_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackberry_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DAF814CC762C19A7A339AA /* Pods_Hackberry_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1B4835FA066E74767861F1 /* Pods_Hackberry_TestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				12721DD723A8626F0080FD9B /* Hackberry_Test */,
 				12721DEE23A862710080FD9B /* Hackberry_TestTests */,
 				12721DD623A8626F0080FD9B /* Products */,
+				F5F5B7555AC80D86C4FE9D58 /* Pods */,
+				F5F9D40708FD0010E885556D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,27 @@
 			path = Hackberry_TestTests;
 			sourceTree = "<group>";
 		};
+		F5F5B7555AC80D86C4FE9D58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				830106851CDB8545D8BDD432 /* Pods-Hackberry_Test.debug.xcconfig */,
+				2A8B4EE64B724C5D304742C7 /* Pods-Hackberry_Test.release.xcconfig */,
+				7A51A155117C91D3ABDC9B6B /* Pods-Hackberry_TestTests.debug.xcconfig */,
+				553705F2149C65711C16835D /* Pods-Hackberry_TestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5F9D40708FD0010E885556D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CC71A2126CD5954CF6B8881 /* Pods_Hackberry_Test.framework */,
+				FB0F22405C0493FD6225632A /* Pods_Hackberry_TestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12721DF423A862710080FD9B /* Build configuration list for PBXNativeTarget "Hackberry_Test" */;
 			buildPhases = (
+				B4318F6715086DCA9783A03C /* [CP] Check Pods Manifest.lock */,
 				12721DD123A8626F0080FD9B /* Sources */,
 				12721DD223A8626F0080FD9B /* Frameworks */,
 				12721DD323A8626F0080FD9B /* Resources */,
+				EE7FD617C7BA3287D5C5A70A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12721DF723A862710080FD9B /* Build configuration list for PBXNativeTarget "Hackberry_TestTests" */;
 			buildPhases = (
+				AD4A4602FE463E61770A3F7D /* [CP] Check Pods Manifest.lock */,
 				12721DE723A862710080FD9B /* Sources */,
 				12721DE823A862710080FD9B /* Frameworks */,
 				12721DE923A862710080FD9B /* Resources */,
@@ -194,6 +230,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD4A4602FE463E61770A3F7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackberry_TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4318F6715086DCA9783A03C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackberry_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE7FD617C7BA3287D5C5A70A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackberry_Test/Pods-Hackberry_Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hackberry_Test/Pods-Hackberry_Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hackberry_Test/Pods-Hackberry_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12721DD123A8626F0080FD9B /* Sources */ = {
@@ -360,6 +460,7 @@
 		};
 		12721DF523A862710080FD9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 830106851CDB8545D8BDD432 /* Pods-Hackberry_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +479,7 @@
 		};
 		12721DF623A862710080FD9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8B4EE64B724C5D304742C7 /* Pods-Hackberry_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +498,7 @@
 		};
 		12721DF823A862710080FD9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A51A155117C91D3ABDC9B6B /* Pods-Hackberry_TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +521,7 @@
 		};
 		12721DF923A862710080FD9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553705F2149C65711C16835D /* Pods-Hackberry_TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
