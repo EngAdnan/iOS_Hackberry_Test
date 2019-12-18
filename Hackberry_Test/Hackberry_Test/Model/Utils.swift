@@ -17,26 +17,12 @@ public class Utils {
         view.present(alert, animated: true, completion: nil)
     }
     
-    public static func fetchTeamLogo(logoUrl:String, programImageView:UIImageView){
+    public static func fetchProgramImage(logoUrl:String, programImageView:UIImageView){
         
         HackberryManager.downloadImage(Url: logoUrl){  response, error, statusCode in
             programImageView.image = response!
             
         }
-        
-    }
-        
-    public static func formatEventStatus(status:String) -> String {
-       switch status {
-       case "inProgress":
-           return "Match still in progress"
-           
-       case "finished":
-           return "Finished"
-           
-       default:
-           return "Not statrted yet."
-       }
         
     }
     

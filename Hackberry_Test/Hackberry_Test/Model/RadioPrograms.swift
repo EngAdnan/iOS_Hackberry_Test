@@ -12,10 +12,13 @@ import UIKit
 struct RadioPrograms:Decodable {
     
     let copyright:String
-    let programs:[RadioProgramDetails]
-    let pagination:PaginationRadioPrograms
+    var programs:[RadioProgramDetails]
+    var pagination:PaginationRadioPrograms
 
-    
+    mutating func updateProgramsList(listOfPrograms: [RadioProgramDetails]) {
+        programs.append(contentsOf: listOfPrograms)
+        
+    }
 }
 
 struct RadioProgramDetails:Decodable {
@@ -23,7 +26,7 @@ struct RadioProgramDetails:Decodable {
     let name:String
     let description:String
     let broadcastInfo:String?
-    let responsibleEditor:String
+    let responsibleEditor:String?
     let email:String
     let phone:String
     let programUrl:String
@@ -48,6 +51,10 @@ struct RadioProgramDetails:Decodable {
         case socialMediaPlatforms = "socialmediaplatforms",hasOnDemand = "hasondemand", hasPod = "haspod"
     }
     
+    
+
+
+    
 }
 
 struct SocialMedia:Decodable {
@@ -65,7 +72,7 @@ struct PaginationRadioPrograms:Decodable {
     let size:Int
     let totalhits:Int
     let totalpages:Int
-    let nextpage:String
+    let nextpage:String?
     
 }
 

@@ -17,7 +17,7 @@ class RadioProgramCell: UITableViewCell {
     
     func setRadioProgramName(radioProgramLogoUrl:String?, radioProgramName:String?) {
         if radioProgramLogoUrl != "" {
-            Utils.fetchTeamLogo(logoUrl: radioProgramLogoUrl!, programImageView: radioProgramImageView)
+            Utils.fetchProgramImage(logoUrl: radioProgramLogoUrl!, programImageView: radioProgramImageView)
             
         }
         radioProgramNameLabel.text = radioProgramName

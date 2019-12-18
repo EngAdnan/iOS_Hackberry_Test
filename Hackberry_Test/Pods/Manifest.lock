@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
+  - ViewAnimator (2.7.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: 7085b79373d0b04aef86cb36e50fc871b2f3aa06
+PODFILE CHECKSUM: 2e777f351607ee106958c3a3bd675241768b331e
 
 COCOAPODS: 1.8.4

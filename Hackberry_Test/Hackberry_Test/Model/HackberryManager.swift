@@ -11,14 +11,14 @@ import UIKit
 import Alamofire
 class HackberryManager {
     
-    static func fetchEventDetail(eventId:Int, completionHandler: @escaping (RadioPrograms?, NSError?,Int?) -> ()) {
+    static func fetchEventDetail(getProgramsUrl:String, completionHandler: @escaping (RadioPrograms?, NSError?,Int?) -> ()) {
         struct HTTPBinResponse: Decodable { let result: RadioPrograms? }
-        AF.request(Utils.fetchRadioProgramsUrl)
+        AF.request(getProgramsUrl)
             .responseDecodable(of: RadioPrograms.self ) { response in
                 print(response)
                 switch response.result {
                 case .success(let value):
-                    print (value)
+                 //   print (value)
                     completionHandler(value, nil, response.response?.statusCode)
                 case .failure(let error):
                     completionHandler(nil, error as NSError, response.response?.statusCode)

@@ -28,6 +28,7 @@ class ProgramDetailsController: UIViewController {
     var mediaPlatformsURls = [String:String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        (UIApplication.shared.delegate as! AppDelegate).restrictRotation = .portrait
         let facebookTap = UITapGestureRecognizer(target: self, action: #selector(ProgramDetailsController.tapFunction))
         let instagramTap = UITapGestureRecognizer(target: self, action: #selector(ProgramDetailsController.tapFunction))
         let twitterTap = UITapGestureRecognizer(target: self, action: #selector(ProgramDetailsController.tapFunction))
@@ -54,7 +55,7 @@ class ProgramDetailsController: UIViewController {
     
     func setProgramDetails() {
         programName.text = programDetails.name
-        editorName.text = "By \(programDetails.responsibleEditor)"
+        editorName.text = "By \(programDetails.responsibleEditor ?? "Anonymous")"
         channelName.text = programDetails.channel.name
         descriptionLabel.text = programDetails.description
         emailLabel.text = "Email: \(programDetails.email)"
@@ -66,11 +67,11 @@ class ProgramDetailsController: UIViewController {
             broadcastInfo.isHidden = true
         }
         if programDetails.programImageWide != "" {
-            Utils.fetchTeamLogo(logoUrl: programDetails.programImageWide, programImageView: programImageView)
+            Utils.fetchProgramImage(logoUrl: programDetails.programImageWide, programImageView: programImageView)
             
         }
         if programDetails.socialImage != "" {
-            Utils.fetchTeamLogo(logoUrl: programDetails.socialImage, programImageView: programImageWebSite)
+            Utils.fetchProgramImage(logoUrl: programDetails.socialImage, programImageView: programImageWebSite)
             
         }
         
@@ -88,7 +89,7 @@ class ProgramDetailsController: UIViewController {
         case 4:
             Utils.openLinkInSafari(url: programDetails.programUrl)
         default:
-            "No Action"
+            return
         }
     }
 
