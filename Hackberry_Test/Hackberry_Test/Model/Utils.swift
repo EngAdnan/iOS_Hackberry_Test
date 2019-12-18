@@ -40,6 +40,11 @@ public class Utils {
         
     }
     
+    public static func openLinkInSafari(url:String) {
+        guard let url = URL(string: url) else { return }
+        UIApplication.shared.open(url)
+    }
+    
     public static func setCellHeight(defaultHeight:Int) -> CGFloat {
         let screenDefaultHeight = CGFloat(UIScreen.main.bounds.size.height)
         let cellDefaultHeight =   CGFloat(defaultHeight)

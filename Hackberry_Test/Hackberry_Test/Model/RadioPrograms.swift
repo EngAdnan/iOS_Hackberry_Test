@@ -22,6 +22,7 @@ struct RadioProgramDetails:Decodable {
     let id:Int
     let name:String
     let description:String
+    let broadcastInfo:String?
     let responsibleEditor:String
     let email:String
     let phone:String
@@ -41,7 +42,7 @@ struct RadioProgramDetails:Decodable {
     
     private enum CodingKeys : String, CodingKey {
         case id, name, description, email, phone, channel, archived
-        case programImage = "programimage", programImageTemplateWide = "programimagetemplatewide", programImageWide = "programimagewide"
+        case broadcastInfo = "broadcastinfo", programImage = "programimage", programImageTemplateWide = "programimagetemplatewide", programImageWide = "programimagewide"
         case responsibleEditor = "responsibleeditor", programUrl = "programurl" , programSlug = "programslug" , programImageTemplate = "programimagetemplate"
         case socialImage = "socialimage", socialImageTemplate = "socialimagetemplate"
         case socialMediaPlatforms = "socialmediaplatforms",hasOnDemand = "hasondemand", hasPod = "haspod"

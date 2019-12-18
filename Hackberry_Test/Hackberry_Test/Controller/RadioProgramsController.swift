@@ -74,9 +74,9 @@ class RadioProgramsController: UITableViewController {
     
     func viewEventDetails(radioProgram:RadioProgramDetails){
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-     //   let eventDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "eventDetailsID") as! FootballEventController
-      //  eventDetailsViewController.selectedEventId = selectedEvent.id
-       // self.navigationController?.pushViewController(eventDetailsViewController, animated: true)
+        let eventDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "programDetailsID") as! ProgramDetailsController
+        eventDetailsViewController.programDetails = radioProgram
+        self.navigationController?.pushViewController(eventDetailsViewController, animated: true)
     }
     
     
